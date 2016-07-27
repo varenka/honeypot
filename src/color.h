@@ -45,6 +45,10 @@
 #include <ctime>
 #include <time.h>
 #include <cstdlib>
+#include <stdlib.h>
+#include <pwd.h>
+#include <stdio.h>
+#include <unistd.h>
 
 using namespace std;
 
@@ -81,9 +85,10 @@ public:
     static string GetTimeStamp();
     static string GetLogFileName();
     static void Log(string);
+
+    static string GetUserName();
 };
 #endif
-
 
 
 
