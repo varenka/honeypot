@@ -122,3 +122,17 @@ void io::Log(string msg)
     of_stream.close();
 
 }
+
+string io::GetUserName()
+{
+    struct passwd *pw;
+    uid_t uid;
+
+    uid = geteuid ();
+    pw = getpwuid (uid);
+    if (pw)
+    {
+        return string(pw->pw_name);
+    }
+    return string("no name");
+}
