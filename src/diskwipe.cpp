@@ -6,8 +6,6 @@ using namespace std;
 
 /*
 
-Copyright(c) 2016 Leo Stone
-
 Inputs: ./diskwipe <disk size> <unit of bytes>
 
 EX: ./diskwipe 2 TB
